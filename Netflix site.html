@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <!--Style-->
+<style>
+body{
+  background-color: #141414;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 1300px;
+}
+
+.netflix-logo{
+  width: 147px;
+  height: 80px;
+  margin-left: 150px;
+}
+
+.sign-in{
+  display: block;
+  margin-left: 1250px;
+  background-color: #F40612;
+  border: none;
+  width: 70px;
+  height: 28px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sign-in:hover{
+  background-color: #e50914cb;
+  color: rgba(255, 255, 255, 0.773);
+}
+.sign-in-c{
+  margin-top: -60px;
+}
+
+h1{
+display: grid;
+place-items: center;
+height: 50vh;
+font-size: 55px;
+font-family: sans-serif;
+color: white;
+font-weight: 700;
+cursor: default;
+
+}
+
+h2{
+  display: grid;
+place-items: center;
+font-size: 65px;
+font-family: sans-serif;
+margin-top: -180px;
+color: white;
+font-weight: 700;
+cursor: default;
+}
+
+.p1{
+  color: white;
+  margin-left: 610px;
+  margin-top: -35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.p2{
+  color: white;
+  margin-left: 510px;
+  margin-top: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.search-bar{
+font-family: sans-serif;
+margin-left: 450px;
+width: 350px;
+height: 50px;
+border-radius: 3px;
+border-color: white;
+border-width: 1px;
+background-color: #141414;
+border-style: solid;
+font-size: 15px;
+font-weight: 400;
+padding-left: 20px;
+color: white;
+}
+
+.search-bar:focus{
+  border: 3px solid white;
+  
+}
+.get-started{
+  height: 60px;
+  width: 180px;
+  background-color: #F40612;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: -2px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.get-started:hover{
+  background-color: #e50914c3;
+  color: rgba(255, 255, 255, 0.784);
+}
+
+.line{
+  height: 10px;
+  color: white;
+  cursor: default;
+}
+
+h3{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+  
+.select-1{
+  margin-left: 75px;
+  background-color: #141414;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  width: 110px;
+  font-size: 17px;
+  border-radius: 6px;
+}
+
+.select-2{
+  margin-left: 20px;
+  background-color: #141414;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  width: 110px;
+  font-size: 17px;
+  border-radius: 6px;
+}
+
+.all{
+  margin-top: -30px;
+}
+
+.movie1{
+  width: 200px;
+  height: 350px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: width 0.5s, height 0.5s;
+  animation-name: blinking;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.movie1:hover{
+  width: 220px;
+  height: 370px;
+}
+.cards-container{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px 300px 300px;
+  margin-top: 70px;
+  margin-left: 90px;
+  
+}
+
+.one{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150px;
+  font-weight: 900;
+  margin-left: -40px;
+  border-color: white;
+  border-radius: 3px;
+  width: 267px;
+  height: 200px;
+  transition: font-size 0.5s;
+}
+
+.rights{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 120px;
+  margin-left: 90px;
+}
+
+.netflix{
+  color: #ffffffb3;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 90px;
+  margin-bottom: -5px;
+  font-size: 15px;
+}
+</style>
+
+<!--Head-->
+<head><title>Netflix clone.com</title></head>
+
+<!--Code-->
+<body>
+ <main>
+  <div class="hi">
+  <div class="netflix-logo-c">
+    <img src="Images/Netflix_Logo_RGB.png" alt="" class="netflix-logo">
+  </div>
+
+  <div class="sign-in-c">
+    <button class="sign-in">
+      Sign In
+    </button>
+  </div>
+
+  <div class="all">
+  <div class="head-c">
+    <h1 class="head">Unlimited movies,</h1>
+    <h2>Tv shows, and more</h2>
+    <div class="paragraph">
+    <p class="p1">Starts at Rs 250. Cancel anytime.</p>
+    <p class="p2">Ready to watch? Enter your email to create or restart your membership.
+    </p>
+  </div>
+  </div>
+
+  <div class="searchBar-button">
+    <input type="text" placeholder="Email address" class="search-bar">
+    <button class="get-started">Get Started &nbsp  ></button>
+    <p class="line">_______________________________________________________________________________________________________________________________________________________________________________________________</p>
+  </div>
+
+  <div class="trending-now">
+  <h3>Trending Now</h3>
+
+  <select class="select-1">
+    <option>Global</option>
+    <option>Pakistan</option>
+  </select>
+
+  <select class="select-2">
+    <option>Movies</option>
+    <option>Series</option>
+  </select>
+</div>
+<!-- Cards -->
+
+<div class="cards-container">
+  <div class="movie1"><p class="one">1</p></div>
+  <div class="movie1"><p class="one">2</p></div>
+  <div class="movie1"><p class="one">3</p></div>
+  <div class="movie1"><p class="one">4</p></div>
+  <div class="movie1"><p class="one">5</p></div>
+</div>
+</div>
+<div class="rights-c">
+  <p class="rights">Copyright © 2024 all rights reserved</p>
+  <p class="netflix">Netflix Pakistan</p>
+</div>
+</div>
+ </main>
+</body>
+
+</html>
